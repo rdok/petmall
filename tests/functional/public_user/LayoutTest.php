@@ -26,18 +26,17 @@ class HomeTest extends TestCase
 			->see('<a href="' . route('blog') . '">Blog</a>')
 			->see('<a href="' . route('contact') . '">' . trans('components.contact') . '</a>')
 			->see('<a href="' . route('auth') . '">' . trans('components.sign_in') . '/' . trans('components.registration') . '</a>')
-			->see('<img src="' . url('e-shop/img/ui/logo.png') . '" class="img-responsive" alt="PetMall Logo"/>')
+			->see('<img src="' . url('e-shop/img/logo.png') . '" class="img-responsive" alt="PetMall Logo"/>')
 			->see('<input type="text" class="form-control pull-right" placeholder="' . trans('component.search_with_dots') . '" name="q">')
 			->see('<button class="btn btn-default btn-sm" type="submit" id="search-button">')
-			->see('<img src="' . url('img/ui/free_shipping.png') . '">')
-			->see(trans('components.free_shipping'))
-			->see('<img src="' . url('navbar/cart.png') . '">')
+			->see('<img src="' . url('e-shop/img/free_shipping.png') . '"/>')
+			->see('<span class="sr-only">' .  trans('components.toggle_navigation') . '</span>')
+			->see('<a href="#">' . trans('components.free_shipping') . '</a>')
+			->see('<img src="' . url('e-shop/img/cart.png') . '"/>')
 			->see(trans('components.my_orders'))
-			->see('<img src="' . url('img/ui/fb.png') . '">')
+			->see('<img src="' . url('e-shop/img/fb.png') . '"/>')
 			->see('Facebook')
-			->see('<img src="' . url('img/ui/dog.png') . '" alt="' . trans('component.dog_icon') . '">')
-			->see(trans('component.dog'))
-			->see('<img src="' . url('img/ui/cat.png') . '" alt="' . trans('component.dog_icon') . '">')
-			->see(trans('component.dog'));
+			->see('<a href="' . url(route('home')) . '" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">')
+			->see('<img src="' . url('e-shop/img/dog.png') . '" alt="' . trans('component.dog_icon') . '"/>' . trans('components.dog'));
 	}
 }

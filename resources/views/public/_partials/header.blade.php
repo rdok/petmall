@@ -3,10 +3,8 @@
     <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main"
                 aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">{!! trans('components.toggle_navigation') !!}</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <span class="sr-only">{!! trans('components.toggle_navigation') !!}</span> <span class="icon-bar"></span>
+            <span class="icon-bar"></span> <span class="icon-bar"></span>
         </button>
     </div>
 
@@ -27,7 +25,7 @@
     <div class="row">
         <!-- Brand -->
         <div class="col-sm-4 col-md-4">
-            <a href="#"><img src="{!! url('e-shop/img/ui/logo.png')!!}" class="img-responsive" alt="PetMall Logo"/></a>
+            <a href="#"><img src="{!! url('e-shop/img/logo.png')!!}" class="img-responsive" alt="PetMall Logo"/></a>
         </div>
 
         <!-- Search -->
@@ -36,7 +34,7 @@
 
                 <div class="input-group input-group-sm col-xs-9">
 
-                    <input type="text" class="form-control pull-right" placeholder="search..." name="q">
+                    <input type="text" class="form-control pull-right" placeholder="{!! trans('component.search_with_dots') !!}" name="q">
 
                     <div class="input-group-btn">
                         <button class="btn btn-default btn-sm" type="submit" id="search-button">
@@ -46,43 +44,35 @@
                 </div>
                 <button type="button" id="breeds-toggle-btn" class="navbar-toggle collapsed" data-toggle="collapse"
                         data-target="#navbar-breeds" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <span class="sr-only">{!! trans('components.toggle_navigation') !!}</span>
+                    <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
                 </button>
             </form>
         </div>
 
         <!-- Free Shipping -->
         <div class="col-sm-2 col-md-2 hidden-xs col-md-pull-1 center-block text-center" id="free-shipping">
-            <a href="#">
-                <img src="~/Content/Images/common/navbar/free_shipping.png"/>
-            </a>
+            <a href="#"> <img src="{!! url('e-shop/img/free_shipping.png') !!}"/> </a>
 
             <div class="caption">
-                <a href="#">Δωρεάν αποστολή</a>
+                <a href="#">{!! trans('components.free_shipping') !!}</a>
             </div>
         </div>
 
         <!-- User's shopping cart -->
         <div id="orders" class="col-sm-1 hidden-xs col-md-2 col-md-pull-0  text-center">
             <div class="row">
-                <a href="#">
-                    <img src="~/Content/Images/common/navbar/cart.png"/>
-                </a>
+                <a href="#"> <img src="{!! url('e-shop/img/cart.png') !!}"/> </a>
             </div>
             <button class="btn btn-default btn-sm" type="submit">
-                Οι παραγγελίες μου
+                {!! trans('components.my_orders') !!}
             </button>
 
         </div>
 
         <!-- Facebook Logo -->
         <div class="col-sm-1 col-md-1 hidden-xs" id="fb-logo">
-            <a href="#">
-                <img src="~/Content/Images/common/navbar/fb.png"/>
-            </a>
+            <a href="#"> <img src="{!! url('e-shop/img/fb.png') !!}"/> </a>
 
             <div class="caption">
                 <a href="#">Facebook</a>
@@ -90,15 +80,14 @@
         </div>
 
     </div>
-    <!-- /.row -->
-    <!-- Pet Breeds -->
+    <!-- /.row --><!-- Pet Breeds -->
     <div class="navbar-collapse collapse" id="navbar-breeds">
         <ul id="main-menu" class="sm sm-simple">
             <!-- Credits due http://alijafarian.com/bootstrap-multi-column-dropdown-menu/ -->
             <li>
-                {{--<a href="@Url.Action("Index", "Home")" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="100">--}}
-                {{--<img src="~/Content/Images/common/navbar/dog.png" alt="Σκύλος" />Σκύλος--}}
-                {{--</a>--}}
+                <a href="{!! route('home') !!}" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
+                    <img src="{!! url('e-shop/img/dog.png') !!}" alt="{!! trans('component.dog_icon') !!}"/>{!! trans('components.dog') !!}
+                </a>
                 <ul>
                     <li>
                         <a href="#">Τροφές</a>
