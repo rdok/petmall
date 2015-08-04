@@ -1,5 +1,5 @@
 @extends('public.layouts.master')
-@section('title', trans('component.initial'))
+@section('title', trans('components.initial'))
 @section('styles')
 @endsection
 

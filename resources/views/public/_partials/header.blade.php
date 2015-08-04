@@ -34,7 +34,7 @@
 
                 <div class="input-group input-group-sm col-xs-9">
 
-                    <input type="text" class="form-control pull-right" placeholder="{!! trans('component.search_with_dots') !!}" name="q">
+                    <input type="text" class="form-control pull-right" placeholder="{!! trans('components.search_with_dots') !!}" name="q">
 
                     <div class="input-group-btn">
                         <button class="btn btn-default btn-sm" type="submit" id="search-button">
@@ -86,7 +86,7 @@
             <!-- Credits due http://alijafarian.com/bootstrap-multi-column-dropdown-menu/ -->
             <li>
                 <a href="{!! route('home') !!}" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
-                    <img src="{!! url('e-shop/img/dog.png') !!}" alt="{!! trans('component.dog_icon') !!}"/>{!! trans('components.dog') !!}
+                    <img src="{!! url('e-shop/img/dog.png') !!}" alt="{!! trans('components.dog_icon') !!}"/>{!! trans('components.dog') !!}
                 </a>
                 <ul>
                     <li>
