@@ -29,6 +29,6 @@ return [
 	'stores'            => 'Καταστήματα',
 	'sign_in'           => 'Σύνδεση',
 	'toggle_navigation' => 'Εναλλαγή πλοήγησης',
-	'veterinary'        => 'Veterinary',
+	'veterinary'        => 'Κτηνιατρικά',
 
 ];
