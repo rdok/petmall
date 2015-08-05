@@ -85,8 +85,8 @@
         <ul id="main-menu" class="sm sm-simple">
             <!-- Credits due http://alijafarian.com/bootstrap-multi-column-dropdown-menu/ -->
             <li>
-                <a href="{!! route('home') !!}" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
-                    <img src="{!! url('e-shop/img/dog.png') !!}" alt="{!! trans('components.dog_icon') !!}"/>{!! trans('components.dog') !!}
+                <a id="dropdown-dog" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
+                    <img src="{!! url('e-shop/img/dog.png') !!}" alt="Dog Icon"/>{!! trans('components.dog') !!}
                 </a>
                 <ul>
                     <li>
@@ -112,13 +112,13 @@
                 </ul>
             </li>
             <li class="pipe-line">
-                <img src="~/Content/Images/common/navbar/pipe_line.png" alt="Pipeline">
+                <img src="{!! url('e-shop/img/pipe_line.png') !!}" alt="Dog Pipeline"/>
             </li>
 
             <li>
-                {{--<a href="@Url.Action("Index", "Home")" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="100">--}}
-                {{--<img src="~/Content/Images/common/navbar/cat.png" alt="Cat" />Γάτα--}}
-                {{--</a>--}}
+                <a id="dropdown-cat" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
+                    <img src="{!! url('e-shop/img/cat.png') !!}" alt="Cat Icon"/>{!! trans('components.cat') !!}
+                </a>
                 <ul>
                     <li>
                         <a href="#">Τροφές</a>
@@ -144,12 +144,12 @@
                 </ul>
             </li>
             <li class="pipe-line">
-                <img src="~/Content/Images/common/navbar/pipe_line.png" alt="Pipeline">
+                <img src="{!! url('e-shop/img/pipe_line.png') !!}" alt="Cat Pipeline"/>
             </li>
 
             <li>
-                {{--<a href="@Url.Action("Index", "Home")" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="100">--}}
-                {{--<img src="~/Content/Images/common/navbar/bird.png" />Πτηνά--}}
+                <a id="dropdown-birds" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
+                    <img src="{!! url('e-shop/img/bird.png') !!}" alt="Bird Icon"/>{!! trans('components.birds') !!}
                 </a>
                 <ul>
                     <li>
@@ -172,13 +172,13 @@
                 </ul>
             </li>
             <li class="pipe-line">
-                <img src="~/Content/Images/common/navbar/pipe_line.png" alt="Pipeline">
+                <img src="{!! url('e-shop/img/pipe_line.png') !!}" alt="Birds Pipeline"/>
             </li>
 
             <li>
-                {{--<a href="@Url.Action("Index", "Home")" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="100">--}}
-                {{--<img src="~/Content/Images/common/navbar/fish.png" />Ψάρια--}}
-                {{--</a>--}}
+                <a id="dropdown-fish" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
+                    <img src="{!! url('e-shop/img/fish.png') !!}" alt="Fish Icon"/>{!! trans('components.fish') !!}
+                </a>
                 <ul>
                     <li><a href="#">Ενυδρεια και βασεις ενυδρειων</a></li>
                     <li><a href="#">Εξοπλισμος ενυδρειων</a></li>
@@ -188,13 +188,13 @@
                 </ul>
             </li>
             <li class="pipe-line">
-                <img src="~/Content/Images/common/navbar/pipe_line.png" alt="Pipeline">
+                <img src="{!! url('e-shop/img/pipe_line.png') !!}" alt="Fish Pipeline"/>
             </li>
 
             <li>
-                {{--<a href="@Url.Action("Index", "Home")" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="100">--}}
-                {{--<img src="~/Content/Images/common/navbar/reptile.png" />Ερπετά--}}
-                {{--</a>--}}
+                <a id="dropdown-reptile" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
+                    <img src="{!! url('e-shop/img/reptile.png') !!}" alt="Reptile Icon"/>{!! trans('components.reptiles') !!}
+                </a>
                 <ul>
                     <li>
                         <a href="#">Τροφές</a>
@@ -218,13 +218,13 @@
                 </ul>
             </li>
             <li class="pipe-line">
-                <img src="~/Content/Images/common/navbar/pipe_line.png" alt="Pipeline">
+                <img src="{!! url('e-shop/img/pipe_line.png') !!}" alt="Reptile Pipeline"/>
             </li>
 
             <li>
-                {{--<a href="@Url.Action("Index", "Home")" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="100">--}}
-                {{--<img src="~/Content/Images/common/navbar/rabit.png" />Μικρά ζώα--}}
-                {{--</a>--}}
+                <a id="dropdown-small-animals" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
+                    <img src="{!! url('e-shop/img/rabbit.png') !!}" alt="Small Animals Icon"/>{!! trans('components.small_animals') !!}
+                </a>
                 <ul>
                     <li>
                         <a href="#">Τροφές</a>
@@ -247,13 +247,13 @@
                 </ul>
             </li>
             <li class="pipe-line">
-                <img src="~/Content/Images/common/navbar/pipe_line.png" alt="Pipeline">
+                <img src="{!! url('e-shop/img/pipe_line.png') !!}" alt="Small Animals Pipeline"/>
             </li>
 
             <li>
-                {{--<a href="@Url.Action("Index", "Home")" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="100">--}}
-                {{--<img src="~/Content/Images/common/navbar/vet.png" />Κτηνιατρικά--}}
-                {{--</a>--}}
+                <a id="dropdown-veterinary" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
+                    <img src="{!! url('e-shop/img/vet.png') !!}" alt="Veterinary Icon"/>{!! trans('components.veterinary') !!}
+                </a>
                 <ul>
                     <li>
                         <a href="#">Συμπληρώματα Διατροφής-Βιταμίνες</a>
@@ -273,13 +273,13 @@
                 </ul>
             </li>
             <li class="pipe-line">
-                <img src="~/Content/Images/common/navbar/pipe_line.png" alt="Pipeline">
+                <img src="{!! url('e-shop/img/pipe_line.png') !!}" alt="Veterinary Pipeline"/>
             </li>
 
             <li>
-                {{--<a href="@Url.Action("Index", "Home")" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="100">--}}
-                {{--<img src="~/Content/Images/common/navbar/book.png" />Βιβλία--}}
-                {{--</a>--}}
+                <a id="dropdown-books" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
+                    <img src="{!! url('e-shop/img/book.png') !!}" alt="Book Icon"/>{!! trans('components.books') !!}
+                </a>
                 <ul></ul>
             </li>
         </ul>

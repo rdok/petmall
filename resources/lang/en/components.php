@@ -12,19 +12,23 @@ return [
 	|
 	*/
 
+	'birds'             => 'Birds',
+	'books'             => 'Books',
 	'cat'               => 'Cat',
-	'cat_icon'          => 'Cat Icon',
 	'contact'           => 'Contact',
 	'dog'               => 'Dog',
-	'dog_icon'          => 'Dog Icon',
+	'fish'              => 'Fish',
 	'free_shipping'     => 'Free shipping',
 	'helpful_tips'      => 'Helpful Tips',
 	'initial'           => 'Home',
 	'my_orders'         => 'My orders',
 	'registration'      => 'Registration',
+	'reptiles'          => 'Reptiles',
+	'small_animals'     => 'Μικρά Ζώα',
 	'search_with_dots'  => 'Search...',
 	'stores'            => 'Stores',
 	'sign_in'           => 'Sign In',
 	'toggle_navigation' => 'Toggle navigation',
+	'veterinary'        => 'Κτινιατρικά',
 
 ];
