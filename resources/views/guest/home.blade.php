@@ -1,4 +1,4 @@
-@extends('public.layouts.master')
+@extends('guest.layouts.master')
 @section('title', trans('components.initial'))
 @section('styles')
 @endsection
