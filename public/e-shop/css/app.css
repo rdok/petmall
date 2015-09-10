@@ -213,11 +213,6 @@ textarea {
 }
 
 /** Start NavBar */
-#navbar-search {
-    margin-top: 55px;
-    margin-left: 41px;
-}
-
 .navbar.navbar-default.navbar-static-top .dropdown > li > a {
     color: #7b4800;
     font-family: Myriad Pro, serif;
@@ -237,8 +232,13 @@ textarea {
     padding-right: 120px;
 }
 
+#breeds-toggle-btn li > a {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 #breeds-toggle-btn li:first-child > a {
-    padding: 0 0 0 2px;
+    padding-left: 2px;
 }
 
 /* Transaprent background */

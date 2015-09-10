@@ -66,9 +66,14 @@
             </div>
             <!-- /.row -->
 
-            <!-- Pet Breeds -->
-            <div class="navbar-collapse collapse" id="navbar-breeds">
-                <ul id="main-menu" class="sm sm-simple">
+        </nav>
+    </div>
+    <div class="row">
+        <!-- Pet Breeds -->
+        <div class="navbar navbar-collapse collapse navbar-static-top" id="navbar-breeds">
+
+                <ul class="sm sm-simple text-center center-block" id="breeds-toggle-btn">
+                    <div class="container">
                     <!-- Credits due http://alijafarian.com/bootstrap-multi-column-dropdown-menu/ -->
                     <li>
                         <a id="dropdown-dog" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
@@ -100,7 +105,6 @@
                     <li class="pipe-line">
                         <img src="{!! url('e-shop/img/pipe_line.png') !!}" alt="Dog Pipeline"/>
                     </li>
-
                     <li>
                         <a id="dropdown-cat" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
                             <img src="{!! url('e-shop/img/cat.png') !!}" alt="Cat Icon"/>{!! trans('components.cat') !!}
@@ -132,7 +136,6 @@
                     <li class="pipe-line">
                         <img src="{!! url('e-shop/img/pipe_line.png') !!}" alt="Cat Pipeline"/>
                     </li>
-
                     <li>
                         <a id="dropdown-birds" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
                             <img src="{!! url('e-shop/img/bird.png') !!}" alt="Bird Icon"/>{!! trans('components.birds') !!}
@@ -160,7 +163,6 @@
                     <li class="pipe-line">
                         <img src="{!! url('e-shop/img/pipe_line.png') !!}" alt="Birds Pipeline"/>
                     </li>
-
                     <li>
                         <a id="dropdown-fish" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
                             <img src="{!! url('e-shop/img/fish.png') !!}" alt="Fish Icon"/>{!! trans('components.fish') !!}
@@ -176,7 +178,6 @@
                     <li class="pipe-line">
                         <img src="{!! url('e-shop/img/pipe_line.png') !!}" alt="Fish Pipeline"/>
                     </li>
-
                     <li>
                         <a id="dropdown-reptile" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
                             <img src="{!! url('e-shop/img/reptile.png') !!}" alt="Reptile Icon"/>{!! trans('components.reptiles') !!}
@@ -206,7 +207,6 @@
                     <li class="pipe-line">
                         <img src="{!! url('e-shop/img/pipe_line.png') !!}" alt="Reptile Pipeline"/>
                     </li>
-
                     <li>
                         <a id="dropdown-small-animals" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
                             <img src="{!! url('e-shop/img/rabbit.png') !!}" alt="Small Animals Icon"/>{!! trans('components.small_animals') !!}
@@ -235,7 +235,6 @@
                     <li class="pipe-line">
                         <img src="{!! url('e-shop/img/pipe_line.png') !!}" alt="Small Animals Pipeline"/>
                     </li>
-
                     <li>
                         <a id="dropdown-veterinary" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
                             <img src="{!! url('e-shop/img/vet.png') !!}" alt="Veterinary Icon"/>{!! trans('components.veterinary') !!}
@@ -261,15 +260,15 @@
                     <li class="pipe-line">
                         <img src="{!! url('e-shop/img/pipe_line.png') !!}" alt="Veterinary Pipeline"/>
                     </li>
-
                     <li>
                         <a id="dropdown-books" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
                             <img src="{!! url('e-shop/img/book.png') !!}" alt="Book Icon"/>{!! trans('components.books') !!}
                         </a>
                         <ul></ul>
                     </li>
+                    </div>
                 </ul>
             </div>
-        </nav>
+        </div>
     </div>
 </div>
