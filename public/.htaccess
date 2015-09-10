@@ -13,4 +13,9 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+
+	# Allow prety URL on Nginx
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
 </IfModule>
