@@ -34,9 +34,7 @@
 
         <hr/>
 
-        tttttttttttt
         @include('flash::message')
-        eeeeeeeeeee
 
         @include('e_shop._partials.footer')
     </div>

@@ -10,6 +10,7 @@ return [
 	| The following language lines contains the strings used by the e-shop layout
 	|
 	*/
+	'title'             => 'Pet Store',
 
 	'header'            => [
 		'free_shipping'     => 'Free shipping in your place',

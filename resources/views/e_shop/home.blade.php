@@ -1,5 +1,5 @@
 @extends('e_shop.layouts.master')
-@section('title', trans('components.initial'))
+@section('title', trans('e_shop.title'))
 @section('styles')
 @endsection
 

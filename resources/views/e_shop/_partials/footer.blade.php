@@ -29,11 +29,6 @@
                             <input type="email" name="email" placeholder="e-mail" />
                         </li>
                         <li class="list-group-item">Βρείτε μας στο Facebook</li>
-                        <li class="list-group-item">
-                            <a href="#">
-                                <img src="~/Content/Images/common/footer/fbk-sm.png" alt="social" />
-                            </a>
-                        </li>
                     </ul>
 
                 </div>

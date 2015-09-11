@@ -18,17 +18,21 @@
                 <div class="col-lg-7">
 
                     <div class="row">
-                        <div class="col-lg-9 col-lg-push-7">
+                        <div class="col-lg-9 col-lg-push-4 text-center">
                             <a href="{!!  route('auth') !!}" class="e-shop-custom-text">{!!  trans('e_shop.header.sign_in') . '/' . trans('e_shop.header.registration') !!}</a>
                         </div>
-                        <div class="col-lg-3 pull-right text-center">
+                        <div class="col-lg-3 col-lg-push-1 pull-right">
                             <div class="dropdown">
                                 <button class="dropdown-toggle custom-button" type="button" id="dropDownLangMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                     <span class="fa fa-language"></span> {!! $locale !!}
                                 </button>
                                 <ul class="dropdown-menu custom-button" aria-labelledby="dropDownLangMenu">
-                                    <li><a href="{!! route('lang', ['locale' => 'en']) !!}">{!! trans('e_shop.header.en') !!}</a></li>
-                                    <li><a href="{!! route('lang', ['locale' => 'gr']) !!}">{!! trans('e_shop.header.gr') !!}</a></li>
+                                    <li>
+                                        <a href="{!! route('lang', ['locale' => 'en']) !!}">{!! trans('e_shop.header.en') !!}</a>
+                                    </li>
+                                    <li>
+                                        <a href="{!! route('lang', ['locale' => 'gr']) !!}">{!! trans('e_shop.header.gr') !!}</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -88,7 +92,7 @@
                     <!-- Credits due http://alijafarian.com/bootstrap-multi-column-dropdown-menu/ -->
                     <li>
                         <a id="dropdown-dog" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
-                            <img src="{!! url('e-shop/img/dog.png') !!}" alt="Dog Icon"/>{!! trans('components.dog') !!}
+                            <img src="{!! url('e-shop/img/dog.png') !!}" alt="Dog Icon"/>{!! trans('e_shop.header.dog') !!}
                         </a>
                         <ul>
                             <li>
@@ -113,12 +117,9 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="pipe-line">
-                        <img src="{!! url('e-shop/img/pipe_line.png') !!}" alt="Dog Pipeline"/>
-                    </li>
                     <li>
                         <a id="dropdown-cat" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
-                            <img src="{!! url('e-shop/img/cat.png') !!}" alt="Cat Icon"/>{!! trans('components.cat') !!}
+                            <img src="{!! url('e-shop/img/cat.png') !!}" alt="Cat Icon"/>{!! trans('e_shop.header.cat') !!}
                         </a>
                         <ul>
                             <li>
@@ -144,12 +145,9 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="pipe-line">
-                        <img src="{!! url('e-shop/img/pipe_line.png') !!}" alt="Cat Pipeline"/>
-                    </li>
                     <li>
                         <a id="dropdown-birds" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
-                            <img src="{!! url('e-shop/img/bird.png') !!}" alt="Bird Icon"/>{!! trans('components.birds') !!}
+                            <img src="{!! url('e-shop/img/bird.png') !!}" alt="Bird Icon"/>{!! trans('e_shop.header.birds') !!}
                         </a>
                         <ul>
                             <li>
@@ -171,12 +169,9 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="pipe-line">
-                        <img src="{!! url('e-shop/img/pipe_line.png') !!}" alt="Birds Pipeline"/>
-                    </li>
                     <li>
                         <a id="dropdown-fish" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
-                            <img src="{!! url('e-shop/img/fish.png') !!}" alt="Fish Icon"/>{!! trans('components.fish') !!}
+                            <img src="{!! url('e-shop/img/fish.png') !!}" alt="Fish Icon"/>{!! trans('e_shop.header.fish') !!}
                         </a>
                         <ul>
                             <li><a href="#">Ενυδρεια και βασεις ενυδρειων</a></li>
@@ -186,12 +181,9 @@
                             <li><a href="#">Τροφες</a></li>
                         </ul>
                     </li>
-                    <li class="pipe-line">
-                        <img src="{!! url('e-shop/img/pipe_line.png') !!}" alt="Fish Pipeline"/>
-                    </li>
                     <li>
                         <a id="dropdown-reptile" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
-                            <img src="{!! url('e-shop/img/reptile.png') !!}" alt="Reptile Icon"/>{!! trans('components.reptiles') !!}
+                            <img src="{!! url('e-shop/img/reptile.png') !!}" alt="Reptile Icon"/>{!! trans('e_shop.header.reptiles') !!}
                         </a>
                         <ul>
                             <li>
@@ -215,12 +207,9 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="pipe-line">
-                        <img src="{!! url('e-shop/img/pipe_line.png') !!}" alt="Reptile Pipeline"/>
-                    </li>
                     <li>
                         <a id="dropdown-small-animals" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
-                            <img src="{!! url('e-shop/img/rabbit.png') !!}" alt="Small Animals Icon"/>{!! trans('components.small_animals') !!}
+                            <img src="{!! url('e-shop/img/rabbit.png') !!}" alt="Small Animals Icon"/>{!! trans('e_shop.header.small_animals') !!}
                         </a>
                         <ul>
                             <li>
@@ -243,12 +232,9 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="pipe-line">
-                        <img src="{!! url('e-shop/img/pipe_line.png') !!}" alt="Small Animals Pipeline"/>
-                    </li>
                     <li>
                         <a id="dropdown-veterinary" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
-                            <img src="{!! url('e-shop/img/vet.png') !!}" alt="Veterinary Icon"/>{!! trans('components.veterinary') !!}
+                            <img src="{!! url('e-shop/img/vet.png') !!}" alt="Veterinary Icon"/>{!! trans('e_shop.header.veterinary') !!}
                         </a>
                         <ul>
                             <li>
@@ -268,12 +254,9 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="pipe-line">
-                        <img src="{!! url('e-shop/img/pipe_line.png') !!}" alt="Veterinary Pipeline"/>
-                    </li>
                     <li>
                         <a id="dropdown-books" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
-                            <img src="{!! url('e-shop/img/book.png') !!}" alt="Book Icon"/>{!! trans('components.books') !!}
+                            <img src="{!! url('e-shop/img/book.png') !!}" alt="Book Icon"/>{!! trans('e_shop.header.books') !!}
                         </a>
                         <ul></ul>
                     </li>

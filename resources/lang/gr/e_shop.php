@@ -10,6 +10,7 @@ return [
 	| The following language lines contains the strings used by the e-shop layout
 	|
 	*/
+	'title'             => 'Κατάστημα Κατοικίδιων Ζώων',
 
 	'header'            => [
 		'free_shipping'     => 'Δωρεάν αποστολή στον χώρο σας',
