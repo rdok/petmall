@@ -25,15 +25,20 @@
 <body>
 <div class="container-fluid">
 
-    @include('guest._partials.header')
+    @include('e_shop._partials.header')
 
     <div class="container body-content">
+
 
         @yield('content')
 
         <hr/>
 
-        @include('guest._partials.footer')
+        tttttttttttt
+        @include('flash::message')
+        eeeeeeeeeee
+
+        @include('e_shop._partials.footer')
     </div>
 </div>
 <!-- ./container -->
@@ -46,6 +51,7 @@
 <script>
     $(function () {
         $('#main-menu').smartmenus();
+        $('#flash-overlay-modal').modal();
     });
 </script>
 

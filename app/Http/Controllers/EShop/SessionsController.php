@@ -1,9 +1,14 @@
 <?php
 
-namespace App\Http\Controllers\e_shop;
+/**
+ * @author Rizart Dokollari <r.dokollari@gmail.com>
+ * @since 11/9/2015
+ */
+namespace App\Http\Controllers\EShop;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
+use Illuminate\Http\Response;
 
 class SessionsController extends Controller
 {

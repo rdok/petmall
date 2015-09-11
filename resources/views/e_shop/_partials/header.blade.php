@@ -1,12 +1,12 @@
 <div class="row" id="header">
     <div class="container">
-        <nav class="navbar navbar-default navbar-static-top">
+        <nav class="e-shop-custom-text navbar navbar-default navbar-static-top">
             <div class="row">
                 <div class="col-lg-5">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main"
                                 aria-expanded="false" aria-controls="navbar">
-                            <span class="sr-only">{!! trans('components.toggle_navigation') !!}</span>
+                            <span class="sr-only">{!! trans('e_shop.header.toggle_navigation') !!}</span>
                             <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
                         </button>
                     </div>
@@ -18,19 +18,30 @@
                 <div class="col-lg-7">
 
                     <div class="row">
-                        <ul class="nav navbar-nav navbar-right xs-device pull-right">
-                            <li>{!! link_to(route('auth'), trans('components.sign_in') . '/' . trans('components.registration')) !!}</li>
-                        </ul>
+                        <div class="col-lg-9 col-lg-push-7">
+                            <a href="{!!  route('auth') !!}" class="e-shop-custom-text">{!!  trans('e_shop.header.sign_in') . '/' . trans('e_shop.header.registration') !!}</a>
+                        </div>
+                        <div class="col-lg-3 pull-right text-center">
+                            <div class="dropdown">
+                                <button class="dropdown-toggle custom-button" type="button" id="dropDownLangMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <span class="fa fa-language"></span> {!! $locale !!}
+                                </button>
+                                <ul class="dropdown-menu custom-button" aria-labelledby="dropDownLangMenu">
+                                    <li><a href="{!! route('lang', ['locale' => 'en']) !!}">{!! trans('e_shop.header.en') !!}</a></li>
+                                    <li><a href="{!! route('lang', ['locale' => 'gr']) !!}">{!! trans('e_shop.header.gr') !!}</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="row">
                         <div id="navbar-main" class="collapse navbar-collapse">
                             <ul class="nav navbar-nav">
-                                <li>{!! link_to(route('home'), trans('components.initial')) !!}</li>
-                                <li>{!! link_to(route('stores'), trans('components.stores')) !!}</li>
-                                <li>{!! link_to(route('helpful_tips'), trans('components.helpful_tips')) !!}</li>
+                                <li>{!! link_to(route('home'), trans('e_shop.header.initial')) !!}</li>
+                                <li>{!! link_to(route('stores'), trans('e_shop.header.stores')) !!}</li>
+                                <li>{!! link_to(route('helpful_tips'), trans('e_shop.header.helpful_tips')) !!}</li>
                                 <li>{!! link_to(route('blog'), 'Blog') !!}</li>
-                                <li>{!! link_to(route('contact'), trans('components.contact')) !!}</li>
+                                <li>{!! link_to(route('contact'), trans('e_shop.header.contact')) !!}</li>
                             </ul>
                         </div>
                         <!--/.nav-collapse -->
@@ -39,24 +50,24 @@
                     <div class="row">
 
                         <!-- Free Shipping -->
-                        <div class="col-sm-4 col-md-4 hidden-xs center-block text-center">
+                        <div class="col-sm-3 col-md-3 col-md-push-0 hidden-xs center-block text-center">
                             <a href="#"> <img src="{!! url('e-shop/img/free_shipping.png') !!}"/> </a>
 
                             <div class="caption">
-                                <a href="#">{!! trans('components.free_shipping') !!}</a>
+                                <a href="#">{!! trans('e_shop.header.free_shipping') !!}</a>
                             </div>
                         </div>
 
                         <!-- Facebook Logo -->
-                        <div class="col-sm-3 col-md-3 hidden-xs">
+                        <div class="col-sm-3 col-md-3 col-md-push-1 hidden-xs">
                             <a href="#"> <img src="{!! url('e-shop/img/fb.png') !!}"/> </a>
                         </div>
 
                         <!-- User's shopping cart -->
-                        <div class="col-sm-4 col-md-4 hidden-xs text-center" id="orders">
+                        <div class="col-sm-4 col-md-4 col-md-push-1 hidden-xs text-center" id="orders">
                             <a href="#"> <img src="{!! url('e-shop/img/cart.png') !!}" style="max-height: 35px;"/> </a>
                             <button class="btn btn-default btn-sm" type="submit">
-                                {!! trans('components.my_orders') !!}
+                                {!! trans('e_shop.header.my_orders') !!}
                             </button>
                         </div>
 
@@ -72,8 +83,8 @@
         <!-- Pet Breeds -->
         <div class="navbar navbar-collapse collapse navbar-static-top" id="navbar-breeds">
 
-                <ul class="sm sm-simple text-center center-block" id="breeds-toggle-btn">
-                    <div class="container">
+            <ul class="sm sm-simple text-center center-block" id="breeds-toggle-btn">
+                <div class="container">
                     <!-- Credits due http://alijafarian.com/bootstrap-multi-column-dropdown-menu/ -->
                     <li>
                         <a id="dropdown-dog" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
@@ -266,9 +277,9 @@
                         </a>
                         <ul></ul>
                     </li>
-                    </div>
-                </ul>
-            </div>
+                </div>
+            </ul>
         </div>
     </div>
+</div>
 </div>

@@ -1,9 +1,11 @@
 <?php
 
-get('/', ['as' => 'home', 'uses' => 'e_shop\HomeController@home']);
-get('stores', ['as' => 'stores', 'uses' => 'e_shop\HomeController@stores']);
-get('helpful_tips', ['as' => 'helpful_tips', 'uses' => 'e_shop\HomeController@helpfulTips']);
-get('blog', ['as' => 'blog', 'uses' => 'e_shop\HomeController@blog']);
-get('contact', ['as' => 'contact', 'uses' => 'e_shop\HomeController@contact']);
+get('/', ['as' => 'home', 'uses' => 'EShop\HomeController@home']);
+get('stores', ['as' => 'stores', 'uses' => 'EShop\HomeController@stores']);
+get('helpful_tips', ['as' => 'helpful_tips', 'uses' => 'EShop\HomeController@helpfulTips']);
+get('blog', ['as' => 'blog', 'uses' => 'EShop\HomeController@blog']);
+get('contact', ['as' => 'contact', 'uses' => 'EShop\HomeController@contact']);
 
-get('auth', ['as' => 'auth', 'uses' => 'e_shop\SessionsController@auth']);
+get('lang/{locale}', ['as' => 'lang', 'uses' => 'EShop\SettingsController@lang']);
+
+get('auth', ['as' => 'auth', 'uses' => 'EShop\SessionsController@auth']);

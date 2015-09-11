@@ -148,6 +148,13 @@ return [
 		 * External Service Providers
 		 */
 		Collective\Html\HtmlServiceProvider::class,
+		Laracasts\Flash\FlashServiceProvider::class,
+
+
+		/*
+		 * Internal Service Providers
+		 */
+		App\Providers\ComposerServiceProvider::class,
 
 	],
 
@@ -202,6 +209,8 @@ return [
 		 */
 		'Form'      => Collective\Html\FormFacade::class,
 		'Html'      => Collective\Html\HtmlFacade::class,
+		'Flash'     => Laracasts\Flash\Flash::class,
+
 	],
 
 ];

@@ -7,6 +7,7 @@
 namespace tests\functional\guest;
 
 
+use Illuminate\Support\Facades\App;
 use TestCase;
 
 class HomeTest extends TestCase
@@ -58,8 +59,22 @@ class HomeTest extends TestCase
 			->see('<img src="' . url('e-shop/img/pipe_line.png') . '" alt="Veterinary Pipeline"/>')
 			->see('<a id="dropdown-books" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">')
 			->see('<img src="' . url('e-shop/img/book.png') . '" alt="Book Icon"/>' . trans('components.books'));
+	}
 
+	/** @test */
+	public function it_changes_languages()
+	{
+		App::setLocale('gr');
 
-
+		$this->visit(route('home'))
+			->seePageIs(route('home'))
+			->see('<span class="fa fa-language"></span> ' . trans("e_shop.header.gr"))
+			->visit(route('lang', ['locale' => 'non-existent']))
+			->see(trans('e_shop.non_existent_lang'))
+			->see('<span class="fa fa-language"></span> ' . trans("e_shop.header.gr"))
+			->click(trans("e_shop.header.en"))
+			->see('<span class="fa fa-language"></span> ' . trans("e_shop.header.en"))
+			->click(trans("e_shop.header.gr"))
+			->see('<span class="fa fa-language"></span> ' . trans("e_shop.header.gr"));
 	}
 }

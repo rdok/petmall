@@ -1,4 +1,4 @@
-@extends('guest.layouts.master')
+@extends('e_shop.layouts.master')
 @section('title', trans('components.initial'))
 @section('styles')
 @endsection
