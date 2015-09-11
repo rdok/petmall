@@ -2,7 +2,7 @@
     <div class="container">
         <nav class="e-shop-custom-text navbar navbar-default navbar-static-top">
             <div class="row">
-                <div class="col-lg-5">
+                <div class="col-lg-5 col-md-5 col-sm-6">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main"
                                 aria-expanded="false" aria-controls="navbar">
@@ -15,10 +15,10 @@
                         <a href="#"><img src="{!! url('e-shop/img/logo.png')!!}" class="img-responsive" alt="PetMall Logo"/></a>
                     </div>
                 </div>
-                <div class="col-lg-7">
+                <div class="col-lg-7 col-md-7 col-sm-6">
 
                     <div class="row">
-                        <div class="col-lg-9 col-lg-push-4 text-center">
+                        <div class="col-lg-9 col-lg-push-4 col-md-9 col-md-push-4 col-sm-9 col-sm-push-3 text-center">
                             <a href="{!!  route('auth') !!}" class="e-shop-custom-text">{!!  trans('e_shop.header.sign_in') . '/' . trans('e_shop.header.registration') !!}</a>
                         </div>
                         <div class="col-lg-3 col-lg-push-1 pull-right">
@@ -83,186 +83,185 @@
 
         </nav>
     </div>
-    <div class="row">
+</div>
+<div class="row" id="navbar-breeds">
+    <div class="container">
         <!-- Pet Breeds -->
         <div class="navbar navbar-collapse collapse navbar-static-top" id="navbar-breeds">
 
             <ul class="sm sm-simple text-center center-block" id="breeds-toggle-btn">
-                <div class="container">
-                    <!-- Credits due http://alijafarian.com/bootstrap-multi-column-dropdown-menu/ -->
-                    <li>
-                        <a id="dropdown-dog" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
-                            <img src="{!! url('e-shop/img/dog.png') !!}" alt="Dog Icon"/>{!! trans('e_shop.header.dog') !!}
-                        </a>
-                        <ul>
-                            <li>
-                                <a href="#">Τροφές</a>
-                                <ul>
-                                    <li><a href="#">Ξηρά τροφή</a></li>
-                                    <li><a href="#">Υγή τροφή</a></li>
-                                    <li><a href="#">Ωμή διατροφή B.A.R.F</a></li>
-                                    <li><a href="#">Λιχουδιές & κόκκαλα</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Αξεσουάρ</a>
-                                <ul>
-                                    <li><a href="#">Στωματάκια</a></li>
-                                    <li><a href="#">Μπολάκια & Ταΐστρες</a></li>
-                                    <li><a href="#">Περιλαίμια - Οδηγοί</a></li>
-                                    <li><a href="#">Κλουβιά Μεταφοράς - Σπιτάκια</a></li>
-                                    <li><a href="#">Πάρκα Εκπαίδευσης</a></li>
-                                    <li><a href="#">Ρούχα</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a id="dropdown-cat" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
-                            <img src="{!! url('e-shop/img/cat.png') !!}" alt="Cat Icon"/>{!! trans('e_shop.header.cat') !!}
-                        </a>
-                        <ul>
-                            <li>
-                                <a href="#">Τροφές</a>
-                                <ul>
-                                    <li><a href="#">Ξηρα τροφι</a></li>
-                                    <li><a href="#">Υγή τροφή</a></li>
-                                    <li><a href="#">Λιχουδιές</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Αξεσουάρ</a>
-                                <ul>
-                                    <li><a href="#">Αμμοι-λεκανες αμμου</a></li>
-                                    <li><a href="#">Ειδη μεταφορας</a></li>
-                                    <li><a href="#">Ονυχοδρομια</a></li>
-                                    <li><a href="#">Παιχνιδια</a></li>
-                                    <li><a href="#">Κρεβατακια- καλαθακια</a></li>
-                                    <li><a href="#">Μπολ- ταιστρες</a></li>
-                                    <li><a href="#">Περιλαιμια</a></li>
-                                    <li><a href="#">Ειδη καλοπισμου</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a id="dropdown-birds" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
-                            <img src="{!! url('e-shop/img/bird.png') !!}" alt="Bird Icon"/>{!! trans('e_shop.header.birds') !!}
-                        </a>
-                        <ul>
-                            <li>
-                                <a href="#">Τροφές</a>
-                                <ul>
-                                    <li><a href="#">Καναρινια</a></li>
-                                    <li><a href="#">Αγριοπουλια</a></li>
-                                    <li><a href="#">Παπαγαλακια</a></li>
-                                    <li><a href="#">Μεγάλος & Μεσαίος Παπαγάλος</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Αξεσουάρ</a>
-                                <ul>
-                                    <li><a href="#">Κλουβια</a></li>
-                                    <li><a href="#">Παιχνιδια</a></li>
-                                    <li><a href="#">Αξεσουάρ κλουβιών</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a id="dropdown-fish" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
-                            <img src="{!! url('e-shop/img/fish.png') !!}" alt="Fish Icon"/>{!! trans('e_shop.header.fish') !!}
-                        </a>
-                        <ul>
-                            <li><a href="#">Ενυδρεια και βασεις ενυδρειων</a></li>
-                            <li><a href="#">Εξοπλισμος ενυδρειων</a></li>
-                            <li><a href="#">Βελτιωτικα ενυδρειου και συντηρηση</a></li>
-                            <li><a href="#">Διακοσμητικα ενυδρειου</a></li>
-                            <li><a href="#">Τροφες</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a id="dropdown-reptile" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
-                            <img src="{!! url('e-shop/img/reptile.png') !!}" alt="Reptile Icon"/>{!! trans('e_shop.header.reptiles') !!}
-                        </a>
-                        <ul>
-                            <li>
-                                <a href="#">Τροφές</a>
-                                <ul>
-                                    <li><a href="#">Υγή τροφή</a></li>
-                                    <li><a href="#">Ωμή διατροφή B.A.R.F</a></li>
-                                    <li><a href="#">Λιχουδιές & κόκκαλα</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Αξεσουάρ</a>
-                                <ul>
-                                    <li><a href="#">Στωματάκια</a></li>
-                                    <li><a href="#">Μπολάκια & Ταΐστρες</a></li>
-                                    <li><a href="#">Περιλαίμια - Οδηγοί</a></li>
-                                    <li><a href="#">Κλουβιά Μεταφοράς - Σπιτάκια</a></li>
-                                    <li><a href="#">Πάρκα Εκπαίδευσης</a></li>
-                                    <li><a href="#">Ρούχα</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a id="dropdown-small-animals" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
-                            <img src="{!! url('e-shop/img/rabbit.png') !!}" alt="Small Animals Icon"/>{!! trans('e_shop.header.small_animals') !!}
-                        </a>
-                        <ul>
-                            <li>
-                                <a href="#">Τροφές</a>
-                                <ul>
-                                    <li><a href="#">Κουνέλια</a></li>
-                                    <li><a href="#">Ινδικά Χοιρίδια</a></li>
-                                    <li><a href="#">Chinchila</a></li>
-                                    <li><a href="#">Hamster</a></li>
-                                    <li><a href="#">Σκίουροι</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Αξεσουάρ</a>
-                                <ul>
-                                    <li><a href="#">Κλουβια</a></li>
-                                    <li><a href="#">Παιχνιδια</a></li>
-                                    <li><a href="#">Είδη Καλοπισμού</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a id="dropdown-veterinary" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
-                            <img src="{!! url('e-shop/img/vet.png') !!}" alt="Veterinary Icon"/>{!! trans('e_shop.header.veterinary') !!}
-                        </a>
-                        <ul>
-                            <li>
-                                <a href="#">Συμπληρώματα Διατροφής-Βιταμίνες</a>
-                            </li>
-                            <li>
-                                <a href="#">Αντιπαρασιτικά Φάρμακα</a>
-                                <ul>
-                                    <li><a href="#">Σπρέι</a></li>
-                                    <li><a href="#">Ευδοπαράσιτα</a></li>
-                                    <li><a href="#">Αμπούλες</a></li>
-                                    <li><a href="#">Περιλαίμια</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Λοιπά Είδη</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a id="dropdown-books" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
-                            <img src="{!! url('e-shop/img/book.png') !!}" alt="Book Icon"/>{!! trans('e_shop.header.books') !!}
-                        </a>
-                        <ul></ul>
-                    </li>
-                </div>
+                <!-- Credits due http://alijafarian.com/bootstrap-multi-column-dropdown-menu/ -->
+                <li>
+                    <a id="dropdown-dog" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
+                        <img src="{!! url('e-shop/img/dog.png') !!}" alt="Dog Icon"/>{!! trans('e_shop.header.dog') !!}
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#">Τροφές</a>
+                            <ul>
+                                <li><a href="#">Ξηρά τροφή</a></li>
+                                <li><a href="#">Υγή τροφή</a></li>
+                                <li><a href="#">Ωμή διατροφή B.A.R.F</a></li>
+                                <li><a href="#">Λιχουδιές & κόκκαλα</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Αξεσουάρ</a>
+                            <ul>
+                                <li><a href="#">Στωματάκια</a></li>
+                                <li><a href="#">Μπολάκια & Ταΐστρες</a></li>
+                                <li><a href="#">Περιλαίμια - Οδηγοί</a></li>
+                                <li><a href="#">Κλουβιά Μεταφοράς - Σπιτάκια</a></li>
+                                <li><a href="#">Πάρκα Εκπαίδευσης</a></li>
+                                <li><a href="#">Ρούχα</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a id="dropdown-cat" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
+                        <img src="{!! url('e-shop/img/cat.png') !!}" alt="Cat Icon"/>{!! trans('e_shop.header.cat') !!}
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#">Τροφές</a>
+                            <ul>
+                                <li><a href="#">Ξηρα τροφι</a></li>
+                                <li><a href="#">Υγή τροφή</a></li>
+                                <li><a href="#">Λιχουδιές</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Αξεσουάρ</a>
+                            <ul>
+                                <li><a href="#">Αμμοι-λεκανες αμμου</a></li>
+                                <li><a href="#">Ειδη μεταφορας</a></li>
+                                <li><a href="#">Ονυχοδρομια</a></li>
+                                <li><a href="#">Παιχνιδια</a></li>
+                                <li><a href="#">Κρεβατακια- καλαθακια</a></li>
+                                <li><a href="#">Μπολ- ταιστρες</a></li>
+                                <li><a href="#">Περιλαιμια</a></li>
+                                <li><a href="#">Ειδη καλοπισμου</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a id="dropdown-birds" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
+                        <img src="{!! url('e-shop/img/bird.png') !!}" alt="Bird Icon"/>{!! trans('e_shop.header.birds') !!}
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#">Τροφές</a>
+                            <ul>
+                                <li><a href="#">Καναρινια</a></li>
+                                <li><a href="#">Αγριοπουλια</a></li>
+                                <li><a href="#">Παπαγαλακια</a></li>
+                                <li><a href="#">Μεγάλος & Μεσαίος Παπαγάλος</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Αξεσουάρ</a>
+                            <ul>
+                                <li><a href="#">Κλουβια</a></li>
+                                <li><a href="#">Παιχνιδια</a></li>
+                                <li><a href="#">Αξεσουάρ κλουβιών</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a id="dropdown-fish" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
+                        <img src="{!! url('e-shop/img/fish.png') !!}" alt="Fish Icon"/>{!! trans('e_shop.header.fish') !!}
+                    </a>
+                    <ul>
+                        <li><a href="#">Ενυδρεια και βασεις ενυδρειων</a></li>
+                        <li><a href="#">Εξοπλισμος ενυδρειων</a></li>
+                        <li><a href="#">Βελτιωτικα ενυδρειου και συντηρηση</a></li>
+                        <li><a href="#">Διακοσμητικα ενυδρειου</a></li>
+                        <li><a href="#">Τροφες</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a id="dropdown-reptile" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
+                        <img src="{!! url('e-shop/img/reptile.png') !!}" alt="Reptile Icon"/>{!! trans('e_shop.header.reptiles') !!}
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#">Τροφές</a>
+                            <ul>
+                                <li><a href="#">Υγή τροφή</a></li>
+                                <li><a href="#">Ωμή διατροφή B.A.R.F</a></li>
+                                <li><a href="#">Λιχουδιές & κόκκαλα</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Αξεσουάρ</a>
+                            <ul>
+                                <li><a href="#">Στωματάκια</a></li>
+                                <li><a href="#">Μπολάκια & Ταΐστρες</a></li>
+                                <li><a href="#">Περιλαίμια - Οδηγοί</a></li>
+                                <li><a href="#">Κλουβιά Μεταφοράς - Σπιτάκια</a></li>
+                                <li><a href="#">Πάρκα Εκπαίδευσης</a></li>
+                                <li><a href="#">Ρούχα</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a id="dropdown-small-animals" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
+                        <img src="{!! url('e-shop/img/rabbit.png') !!}" alt="Small Animals Icon"/>{!! trans('e_shop.header.small_animals') !!}
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#">Τροφές</a>
+                            <ul>
+                                <li><a href="#">Κουνέλια</a></li>
+                                <li><a href="#">Ινδικά Χοιρίδια</a></li>
+                                <li><a href="#">Chinchila</a></li>
+                                <li><a href="#">Hamster</a></li>
+                                <li><a href="#">Σκίουροι</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Αξεσουάρ</a>
+                            <ul>
+                                <li><a href="#">Κλουβια</a></li>
+                                <li><a href="#">Παιχνιδια</a></li>
+                                <li><a href="#">Είδη Καλοπισμού</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a id="dropdown-veterinary" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
+                        <img src="{!! url('e-shop/img/vet.png') !!}" alt="Veterinary Icon"/>{!! trans('e_shop.header.veterinary') !!}
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#">Συμπληρώματα Διατροφής-Βιταμίνες</a>
+                        </li>
+                        <li>
+                            <a href="#">Αντιπαρασιτικά Φάρμακα</a>
+                            <ul>
+                                <li><a href="#">Σπρέι</a></li>
+                                <li><a href="#">Ευδοπαράσιτα</a></li>
+                                <li><a href="#">Αμπούλες</a></li>
+                                <li><a href="#">Περιλαίμια</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Λοιπά Είδη</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a id="dropdown-books" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
+                        <img src="{!! url('e-shop/img/book.png') !!}" alt="Book Icon"/>{!! trans('e_shop.header.books') !!}
+                    </a>
+                    <ul></ul>
+                </li>
             </ul>
         </div>
     </div>
-</div>
 </div>

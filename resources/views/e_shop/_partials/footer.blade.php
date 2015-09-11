@@ -1,6 +1,6 @@
-<footer class="footer">
+<div class="row" id="footer">
     <div class="container">
-        <div class="row">
+        <footer class="footer">
             <div class="hidden-xs col-sm-3 col-md-2" id="gooogle-map">
                 <div id="googleMap" style="width: 140px; height: 150px;"></div>
             </div>
@@ -26,18 +26,13 @@
                     <h4>Newseletter</h4>
                     <ul class="list-group pull-right">
                         <li class="list-group-item">
-                            <input type="email" name="email" placeholder="e-mail" />
+                            <input type="email" name="email" placeholder="e-mail"/>
                         </li>
                         <li class="list-group-item">Βρείτε μας στο Facebook</li>
                     </ul>
 
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-sm-3 col-md-push-2">
-                {{--@*&copy; @DateTime.Now.Year - PetMall*@--}}
-            </div>
-        </div>
+        </footer>
     </div>
-</footer>
+</div>

@@ -11,7 +11,6 @@
     <link href='{!! url("vendor/smartmenus/dist/css/sm-core-css.css") !!}' rel='stylesheet' type='text/css'/>
     <link href='{!! url("vendor/smartmenus/dist/css/sm-simple/sm-simple.css") !!}' rel='stylesheet' type='text/css'/>
 
-    <link href='{!! url("e-shop/css/dropdowns.css") !!}' rel='stylesheet' type='text/css'/>
     <link href='{!! url("e-shop/css/app.css") !!}' rel='stylesheet' type='text/css'/>
 
     @yield('styles')
@@ -23,22 +22,23 @@
     <script src='{!! url("vendor/respond/dest/respond.min.js") !!}'></script><![endif]-->
 </head>
 <body>
-<div class="container-fluid">
 
-    @include('e_shop._partials.header')
-
-    <div class="container body-content">
-
+<div id="wrap">
+    <div class="container-fluid">
+        @include('e_shop._partials.header')
 
         @yield('content')
 
         <hr/>
 
         @include('flash::message')
-
-        @include('e_shop._partials.footer')
     </div>
 </div>
+
+<div class="container-fluid">
+    @include('e_shop._partials.footer')
+</div>
+
 <!-- ./container -->
 <script src='{!! url("vendor/jquery/dist/jquery.min.js") !!}'></script>
 <script src='{!! url("vendor/bootstrap/dist/js/bootstrap.min.js") !!}'></script>
