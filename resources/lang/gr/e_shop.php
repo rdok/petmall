@@ -37,6 +37,11 @@ return [
 	],
 	'non_existent_lang' => 'Η επιλεγμένη γλώσσα δεν υποστηρίζεται.',
 
+	'landing'           => [
+		'popular_products'     => 'Δημοφιλή Προϊόντα',
+		'affiliated_companies' => 'Συνεργαζόμενες Εταιρείες',
+	],
+
 	'footer'            => [
 		'general'          => 'Γενικά',
 		'terms_of_use'     => 'Όροι Χρήσης',

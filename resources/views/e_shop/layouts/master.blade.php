@@ -27,9 +27,12 @@
     <div class="container-fluid">
         @include('e_shop._partials.header')
 
-        @yield('content')
+        <div class="row" id="container">
+            @yield('content')
+        </div>
 
         @include('flash::message')
+        <div id="push"></div>
     </div>
 </div>
 

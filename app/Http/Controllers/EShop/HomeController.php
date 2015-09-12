@@ -23,6 +23,6 @@ class HomeController extends BaseController
 	 */
 	public function home()
 	{
-		return view('e_shop.home');
+		return view('e_shop.landing');
 	}
 }

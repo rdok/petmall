@@ -1,4 +1,4 @@
-<div class="row" id="footer">
+<div class="row top-buffer" id="footer">
     <div class="container">
         <div class="row">
             <footer class="footer">

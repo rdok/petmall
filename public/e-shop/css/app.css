@@ -150,3 +150,8 @@ textarea {
 .sm-simple li {
     border-left: none;
 }
+
+.top-buffer {
+    margin-top: 45px;
+}
+

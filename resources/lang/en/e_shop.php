@@ -37,7 +37,13 @@ return [
 		'veterinary'        => 'Veterinary',
 	],
 
+	# Messages
 	'non_existent_lang' => 'The selected language is not supported.',
+
+	'landing'           => [
+		'popular_products'     => 'Popular Products',
+		'affiliated_companies' => 'Affiliated Companies',
+	],
 
 	'footer'            => [
 		'general'          => 'General',
