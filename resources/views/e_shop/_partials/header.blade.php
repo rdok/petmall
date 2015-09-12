@@ -52,9 +52,8 @@
                     </div>
 
                     <div class="row">
-
                         <!-- Free Shipping -->
-                        <div class="col-sm-3 col-md-3 col-md-push-0 hidden-xs center-block text-center">
+                        <div class="col-sm-4 col-md-3 col-md-push-0 hidden-xs center-block text-center">
                             <a href="#"> <img src="{!! url('e-shop/img/free_shipping.png') !!}"/> </a>
 
                             <div class="caption">
@@ -68,7 +67,7 @@
                         </div>
 
                         <!-- User's shopping cart -->
-                        <div class="col-sm-4 col-md-4 col-md-push-1 hidden-xs text-center" id="orders">
+                        <div class="col-sm-5 col-md-4 col-md-push-1 hidden-xs text-center" id="orders">
                             <a href="#"> <img src="{!! url('e-shop/img/cart.png') !!}" style="max-height: 35px;"/> </a>
                             <button class="btn btn-default btn-sm" type="submit">
                                 {!! trans('e_shop.header.my_orders') !!}

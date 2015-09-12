@@ -5,14 +5,12 @@ html, body {
 #wrap {
     min-height: 100%;
     height: auto !important;
-    height: 100%;
-    /* Negative indent footer by it's height */
-    margin: 0 auto -250px;
+    margin: 0 auto -500px;
 }
 
 #push,
 #footer {
-    height: 250px;
+    height: 500px;
 }
 
 #footer {
@@ -141,8 +139,6 @@ textarea {
 .e-shop-custom-text, .navbar-default .navbar-nav > li > a {
     color: #7B4800;
     font-family: Myriad Pro, serif;
-    padding-left: 9px;
-    padding-right: 8px;
 }
 
 .sm-simple a {
