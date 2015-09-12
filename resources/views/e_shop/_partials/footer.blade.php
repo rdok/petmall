@@ -8,30 +8,33 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-3 col-md-push-1">
-                    <h4>Γενικά</h4>
+                    <h4>{!! trans('e_shop.footer.general') !!}</h4>
                     <ul class="list-group">
-                        <li class="list-group-item">Όροι χρήσης</li>
-                        <li class="list-group-item">Τρόποι Πληρωμής</li>
-                        <li class="list-group-item">Τρόποι αποστολής</li>
-                        <li class="list-group-item">Προστασία Προσωπικών Δεδομένων</li>
+                        <li class="list-group-item">{!! trans('e_shop.footer.terms_of_use') !!}</li>
+                        <li class="list-group-item">{!! trans('e_shop.footer.payment_methods') !!}</li>
+                        <li class="list-group-item">{!! trans('e_shop.footer.shipping_methods') !!}</li>
+                        <li class="list-group-item">{!! trans('e_shop.footer.privacy') !!}</li>
                     </ul>
                 </div>
                 <div class="col-md-3 col-sm-3">
-                    <h4>Κατάστημα</h4>
+                    <h4>{!! trans('e_shop.footer.store') !!}</h4>
                     <ul class="list-group">
-                        <li class="list-group-item">Περικλέους 42, Μαρούσι, Αθήνα</li>
+                        <li class="list-group-item">{!! trans('e_shop.footer.address') !!}</li>
                         <li class="list-group-item">ΤΗΛ.: 2106140670</li>
                         <li class="list-group-item">FAX: 210802672</li>
                     </ul>
                 </div>
                 <div class="col-md-3 col-sm-3 pull-right" id="news-letter">
                     <div class="pull-right">
-                        <h4>Newseletter</h4>
+                        <h4>{!! trans('e_shop.footer.newsletter') !!}</h4>
                         <ul class="list-group pull-right">
                             <li class="list-group-item">
                                 <input type="email" name="email" placeholder="e-mail"/>
                             </li>
-                            <li class="list-group-item">Βρείτε μας στο Facebook</li>
+                            <li class="list-group-item">
+                                <a href="https://www.facebook.com/Pet-Mall-542311489132521/timeline/" target="_blank">
+                                    <img src="{!! url('e-shop/img/fb.png') !!}"/> </a>
+                            </li>
                         </ul>
 
                     </div>

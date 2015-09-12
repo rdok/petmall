@@ -36,5 +36,18 @@ return [
 		'search_with_dots'  => 'Search...',
 		'veterinary'        => 'Veterinary',
 	],
+
 	'non_existent_lang' => 'The selected language is not supported.',
+
+	'footer'            => [
+		'general'          => 'General',
+		'terms_of_use'     => 'Terms Of Use',
+		'payment_methods'  => 'Payment Methods',
+		'shipping_methods' => 'Shipping Methods',
+		'privacy'          => 'Privacy',
+		'store'            => 'Store',
+		'address'          => 'Perikleous 42, Marousi, Athens',
+		'ph'               => 'PH.',
+		'newsletter'       => 'Newsletter',
+	],
 ];

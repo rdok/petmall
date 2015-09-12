@@ -61,9 +61,9 @@
                             </div>
                         </div>
 
-                        <!-- Facebook Logo -->
                         <div class="col-sm-3 col-md-3 col-md-push-1 hidden-xs">
-                            <a href="#"> <img src="{!! url('e-shop/img/fb.png') !!}"/> </a>
+                            <a href="https://www.facebook.com/Pet-Mall-542311489132521/timeline/" target="_blank">
+                                <img src="{!! url('e-shop/img/fb.png') !!}"/> </a>
                         </div>
 
                         <!-- User's shopping cart -->
